@@ -1,0 +1,23 @@
+.about{
+  margin: 5rem;
+}
+.header-about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.header-about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.info-about {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
