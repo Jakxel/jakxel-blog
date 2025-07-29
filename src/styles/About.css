@@ -10,14 +10,14 @@
 }
 
 .header-about img {
-  width: 150px;
+  width: 100px;
   border-radius: 50%;
   margin-top: 10px;
 }
 
 .info-about {
   max-width: 600px;
-  margin: 20px auto;
-  font-family: sans-serif;
+  margin: 30px auto;
   line-height: 1.6;
+  font-size: 18px;
 }
