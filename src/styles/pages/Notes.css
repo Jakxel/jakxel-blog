@@ -1,0 +1,42 @@
+.display {
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.header {
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  margin: 1rem 0;
+}
+
+.main {
+  max-width: 660px;
+  margin: 2rem auto 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.main ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.main a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}

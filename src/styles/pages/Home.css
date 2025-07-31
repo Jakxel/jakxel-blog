@@ -1,0 +1,38 @@
+.box {
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.home-header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.home-header-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 660px;
+  width: 100%;
+}
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.home-article {
+  max-width: 660px;
+  width: 100%;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

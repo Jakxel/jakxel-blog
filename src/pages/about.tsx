@@ -1,19 +1,31 @@
 import profileImg from '../assets/147444918.png';
-import '../styles/About.css';
+import '../styles/pages/About.css';
 
 const About = () => {
   return (
-    <div className='about'>
-      <div className='header-about'>
-        <img src={profileImg} alt="Photo profile Islas J" />
-        <h1>Islas Carreon Victor Jakxel</h1>
+    <div className='box'>
+      <div className='about-header'>
+        <div className='about-header-info'>
+          <img src={profileImg} alt="Profile photo of Islas J" />
+          <h1>Islas Carreon Victor Jakxel</h1>        
+        </div>
       </div>
-      <div className='info-about'>
-        <p>Student in Computer Systems Engineering.</p>
-        <p>I share ideas, notes, reflections, and anything that sparks curiosity during my daily experiences, study sessions, and technical explorations.</p>
-        <p>I'm currently in the final stages of my degree, and one of my biggest goals is to strengthen my skills by working on real-world projects, building things from scratch, and solving meaningful problems through practice and experimentation.\</p>
-        <p>I believe that sharing knowledge is one of the best ways to learn and grow. That's why I document my progress here — to clarify my own understanding, keep track of my evolution, and hopefully help or inspire others along the way.</p>
-        <p>You'll find here a mix of technical notes, project breakdowns, thoughts, and software engineering insights, all written from my perspective and personal knowledge.</p>
+      <div className='about-main'>
+        <div className='about-article'>
+          <p>
+            I'm a Computer Systems Engineering student based in Tijuana, Mexico. I have a strong interest in 
+            core Computer Science topics, including algorithms, data structures, operating systems, and software design.
+          </p>
+          <p>
+            I'm continuously learning and building personal projects to strengthen my skills. I also explore fields like 
+            web development, system design, and low-level programming. My goal is to become a versatile software engineer 
+            capable of solving real-world problems through innovation and code.
+          </p>
+          <p>
+            Outside of tech, some of my hobbies include reading, playing piano, learning new languages, drawing, meditating, exercising, and sometimes 
+            just relaxing with music, anime, or spending time with friends.
+          </p>
+        </div>
       </div>
     </div>
   );

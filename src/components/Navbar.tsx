@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import '../styles/Navbar.css';
+import '../styles/components/Navbar.css';
 
 const Navbar = () => {
   return (
@@ -13,6 +13,7 @@ const Navbar = () => {
         <ul className="nav-links">
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/notes">Notes</Link></li>
         </ul>
       </div>
       <div>
