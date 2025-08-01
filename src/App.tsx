@@ -7,6 +7,7 @@ import About from './pages/about.js';
 import Contact from './pages/Contact.js';
 import Navbar from './components/Navbar.jsx';
 import Notes from './pages/Notes.js';
+import Post from './pages/Post.js'; 
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element= {<Home /> }/>
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/posts/:slug" element={<Post />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/notes" element={<Notes />} />

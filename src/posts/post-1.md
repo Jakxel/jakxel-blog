@@ -1,14 +1,9 @@
-# My First Blog Post
+---
+title: "Mi primer post"
+date: "2025-07-31"
+description: "Este es un post de prueba."
+---
 
-This is the content of my first blog post written in Markdown.
+# Bienvenido
 
-## Introduction
-
-Markdown is a lightweight markup language with plain-text formatting syntax.
-
-### Key Features
-
-- Easy to write
-- Easy to read
-
-Enjoy writing your blogs!
+Este es el contenido de mi primer post.
