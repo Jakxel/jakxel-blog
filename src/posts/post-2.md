@@ -1,5 +1,5 @@
 ---
-title: "My first post"
+title: "My second post"
 date: "2025-07-31"
 description: "This is a post of example"
 ---

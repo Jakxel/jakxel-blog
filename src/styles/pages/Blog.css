@@ -1,6 +1,7 @@
 .box {
   margin: 1rem;
   padding: 3rem;
+  align-items: center;
 }
 
 .blog-title-section {
@@ -22,11 +23,15 @@
 }
 
 .blog-post-list {
-  margin-top: 2rem;
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .blog-post-preview {
-  border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
@@ -41,3 +46,4 @@
   font-size: 0.9rem;
   color: #666;
 }
+

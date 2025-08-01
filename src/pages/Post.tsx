@@ -14,11 +14,11 @@ const Post = () => {
       const match = all.find((p) => p.slug === slug);
       if (match) {
         try {
-          const raw = await import(`./post/${slug}.md?raw`);
+          const raw = await import(`../posts/${slug}.md?raw`);
           const content = raw.default;
           setPost({ ...match, content });
         } catch (err) {
-          console.error(`Error loading post: ${slug}`, err);
+          console.error(`❌ Error loading post: ${slug}`, err);
         }
       }
     };
@@ -30,14 +30,8 @@ const Post = () => {
   return (
     <div className="box">
       <h1>{post.title}</h1>
-      <p className="post-meta">
-        {new Date(post.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })}
-      </p>
-      <ReactMarkdown>{post.content}</ReactMarkdown>
+      <p className="post-meta">{post.date}</p>
+      <ReactMarkdown>{post.content || ''}</ReactMarkdown>
     </div>
   );
 };

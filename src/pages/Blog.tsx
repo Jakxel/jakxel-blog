@@ -1,16 +1,11 @@
 import '../styles/pages/Blog.css';
 import { useEffect, useState } from 'react';
 import { getAllPosts } from '../getPosts';
-import type { PostMeta } from '../getPosts'
+import type { PostMeta } from '../getPosts';
+
 const Blog = () => {
   const [posts, setPosts] = useState<PostMeta[]>([]);
-useEffect(() => {
-  console.log("🚀 useEffect ejecutado");
-  getAllPosts().then((posts) => {
-    console.log('📦 Posts encontrados:', posts);
-    setPosts(posts);
-  });
-}, []);
+  
   useEffect(() => {
     getAllPosts().then(setPosts);
   }, []);
@@ -33,12 +28,8 @@ useEffect(() => {
             <h2>{post.title}</h2>
             <p className="post-meta">{post.date}</p>
             <p>{post.description}</p>
-            <a
-              href={`/posts${post.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read more →
+            <a href={`/posts/${post.slug}`} target="_blank" rel="noopener noreferrer">
+            Read more →
             </a>
           </div>
         ))}

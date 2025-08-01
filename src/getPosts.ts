@@ -12,11 +12,12 @@ export interface FullPost extends PostMeta {
 }
 
 export const getAllPosts = async (): Promise<PostMeta[]> => {
-  const files = import.meta.glob('/posts/*.md', {
+  const files = import.meta.glob('/src/posts/*.md', {
     eager: true,
     import: 'default',
     query: '?raw',
-  });
+  })
+  ;console.log('find files for god sake:', Object.keys(files));
 
   return Object.entries(files).map(([path, raw]) => {
     const slug = path.split('/').pop()?.replace('.md', '') || '';

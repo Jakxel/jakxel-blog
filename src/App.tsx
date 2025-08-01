@@ -11,7 +11,7 @@ import Post from './pages/Post.js';
 
 function App() {
 
-  return (
+return (
     <Router>
       <Navbar />
         <Routes>
