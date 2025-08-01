@@ -7,6 +7,10 @@ export interface PostMeta {
   description: string;
 }
 
+export interface FullPost extends PostMeta {
+  content: string;
+}
+
 export const getAllPosts = async (): Promise<PostMeta[]> => {
   const files = import.meta.glob('/src/posts/*.md', {
     eager: true,
