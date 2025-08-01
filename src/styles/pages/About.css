@@ -1,6 +1,8 @@
 .box {
   margin: 1rem;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-header {
@@ -20,7 +22,7 @@
 .about-main {
   display: flex;
   justify-content: center;
-
+}
 .about-article {
   justify-self: center;
   max-width: 660px;
