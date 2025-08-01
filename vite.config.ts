@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { nodePolyfills } from "/Users/jakxel/Developer/Projects/jakxel-blog/node_modules/vite-plugin-node-polyfills/dist/index"
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig({
   plugins: [
