@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import ThemeToggle from '../components/themeToggle.tsx';
 import '../styles/components/Navbar.css';
 
 const Navbar = () => {
@@ -19,9 +20,7 @@ const Navbar = () => {
           </ul>
       </div>
       <div>
-        <button>
-        Light
-        </button>
+        <ThemeToggle />
       </div>
     </nav>
   ) 
