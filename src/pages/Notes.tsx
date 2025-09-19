@@ -3,7 +3,8 @@ import '../styles/pages/Notes.css';
 const Notes = () => {
   return (
     <div className="box">
-      <div className="header">
+      <div className='screen-type-1'>
+<div className="header">
         <h1>Notes</h1>
         <p>
           These notes cover a variety of Computer Science topics. They were created for self-review and to be a helpful resource for others as well.
@@ -78,6 +79,8 @@ const Notes = () => {
           <li>Coming soon...</li>
         </ul>
       </div>
+      </div>
+      
     </div>
   );
 };

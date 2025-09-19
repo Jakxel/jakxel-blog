@@ -1,10 +1,14 @@
 .navbar {
-  height: 2rem;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  padding: 1rem;
-  margin: 1rem;
+  z-index: 1000;
+
 }
 
 .navbar-logo .logo {
@@ -12,7 +16,18 @@
   font-weight: bold;
   text-decoration: none;
 }
-
+.navbar-logo{
+  width: 400px;
+  text-align: center;
+}
+.nav-links{
+  width: 400px;
+  justify-content: space-around;
+}
+.theme-toggle{
+  width: 400px;
+  text-align: center;
+}
 .navbar-links .nav-links {
   list-style-type: none;
   display: flex;
@@ -20,9 +35,6 @@
   padding: 0;
 }
 
-.navbar-links .nav-links li {
-  margin-right: 1rem;
-}
 
 .navbar-links .nav-links a {
   text-decoration: none;

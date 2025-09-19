@@ -67,14 +67,19 @@ p{
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-html{
-
+html, body{
+  height: 100%;
+  overflow: hidden;
 }
 
-body {
-  background-color: var(--background-color);
-
+.box {
+  height: calc(100dvh - 60px);
+  margin-top: 60px;
+  overflow-y: auto;
+  padding: 1rem;
+  justify-content: center;
 }
 
 @media screen and (min-width: 636px) {

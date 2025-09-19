@@ -19,7 +19,7 @@ const Navbar = () => {
           
           </ul>
       </div>
-      <div>
+      <div className='theme-toggle'>
         <ThemeToggle />
       </div>
     </nav>
