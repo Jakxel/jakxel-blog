@@ -4,6 +4,7 @@
   --secundary-color  : rgb(130, 255, 188);
   --title-color      : #000000;
   --text-color       : #373737;
+  --special-text     : rgb(42, 46, 255);
   --light-text-color : #ffffff;
   --body-color       : rgba(0,0,124);
 
@@ -29,12 +30,13 @@
 }
 
 .dark-theme {
-  --background-color  : #000000;
+  --background-color  : #282828;
   --main-color       : #1f1f1f;
   --secundary-color  : #31363b;
   --title-color      : #e0e0e0;
   --text-color       : #b0b3b8;
-  --light-text-color : #ffffff;
+  --special-text     : rgb(200,225,225);
+  --light-text-color : #ffffff; 
   --body-color       : #181a1b;
 }
 
@@ -70,6 +72,7 @@ p{
   box-sizing: border-box;
 }
 html, body{
+  background-color: var(--background-color);
   height: 100%;
   overflow: hidden;
 }

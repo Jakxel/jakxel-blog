@@ -14,7 +14,8 @@
 .navbar-logo .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: none;
+ color: var(--special-text); 
+ text-decoration: none;
 }
 .navbar-logo{
   width: 400px;
@@ -27,6 +28,7 @@
 .theme-toggle{
   width: 400px;
   text-align: center;
+  color: rgb(200, 225, 225);
 }
 .navbar-links .nav-links {
   list-style-type: none;
@@ -38,4 +40,5 @@
 
 .navbar-links .nav-links a {
   text-decoration: none;
+  color: var(--special-text)
 }
