@@ -49,7 +49,7 @@ const books: Book[] = [
 function Books() {
   return (
     <div className="books-container">
-      <h1>Catálogo de Libros</h1>
+      <h1>Books catalog</h1>
       <ul className="books-list">
         {books.map((book, idx) => (
           <li key={idx} className="book-card">

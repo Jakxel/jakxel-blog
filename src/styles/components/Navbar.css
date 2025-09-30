@@ -1,44 +1,68 @@
 .navbar {
-  background-color: var(--main-color);
-  height: 70px;
+  background: rgba(245, 245, 247, 0.85); /* Apple-like translucent light */
+  height: 64px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e5ea;
 }
 
 .navbar-logo .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
- color: var(--special-text); 
- text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #1d1d1f; /* Apple dark text */
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
 }
+
 .navbar-logo{
-  width: 400px;
-  text-align: center;
+  width: 220px;
+  text-align: left;
+  padding-left: 32px;
 }
+
 .nav-links{
-  width: 400px;
-  justify-content: space-around;
+  width: auto;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
 }
+
 .theme-toggle{
-  width: 400px;
-  text-align: center;
-  color: rgb(200, 225, 225);
+  width: 220px;
+  text-align: right;
+  padding-right: 32px;
+  color: #86868b;
 }
+
 .navbar-links .nav-links {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
+  gap: 32px;
 }
-
 
 .navbar-links .nav-links a {
   text-decoration: none;
-  color: var(--special-text)
+  color: #1d1d1f;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links .nav-links a:hover,
+.navbar-links .nav-links a:focus {
+  background: #e5e5ea;
+  color: #0071e3; /* Apple blue */
 }
