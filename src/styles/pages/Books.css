@@ -1,0 +1,85 @@
+.books-container {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1c1c1e;
+}
+
+.books-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.books-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.book-card {
+  display: flex;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-image {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.book-info {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-info p {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
+
+.book-link {
+  margin-top: 0.5rem;
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.book-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-image {
+    width: 200px;
+    height: 300px;
+  }
+  .book-info {
+    padding: 1rem;
+    text-align: center;
+  }
+}
