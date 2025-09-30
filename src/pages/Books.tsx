@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/pages/Books.css";
 
 type Book = {
