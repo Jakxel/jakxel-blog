@@ -14,7 +14,8 @@ export interface FullPost extends PostMeta {
 export const getAllPosts = async (): Promise<PostMeta[]> => {
   const files = import.meta.glob('/src/posts/*.md', {
     eager: true,
-    as: 'raw',
+    query: '?raw',
+    import: 'default',
   });
 
   return Object.entries(files).map(([path, raw]) => {

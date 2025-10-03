@@ -1,7 +1,8 @@
-import '../styles/pages/Blog.css';
+import '../styles/Blog.css';
 import { useEffect, useState } from 'react';
 import { getAllPosts } from '../getPosts';
 import type { PostMeta } from '../getPosts';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const [posts, setPosts] = useState<PostMeta[]>([]);
@@ -27,9 +28,10 @@ const Blog = () => {
             <h2>{post.title}</h2>
             <p className="post-meta">{post.date}</p>
             <p>{post.description}</p>
-            <a href={`/posts/${post.slug}`} target="_blank" rel="noopener noreferrer">
-            Read more →
-            </a>
+            {/* 👇 Ahora usamos Link en lugar de <a> */}
+            <Link to={`/posts/${post.slug}`}>
+              Read more →
+            </Link>
           </div>
         ))}
       </div>

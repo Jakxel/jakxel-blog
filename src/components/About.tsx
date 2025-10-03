@@ -1,12 +1,10 @@
-import profileImg from '../assets/147444918.png';
-import '../styles/pages/About.css';
+import '../styles/About.css';
 
 const About = () => {
   return (
     <div className='box'>
       <div className='about-header'>
         <div className='about-header-info'>
-          <img src={profileImg} alt="Profile photo of Islas J" />
           <h1>Islas Carreon Victor Jakxel</h1>        
         </div>
       </div>

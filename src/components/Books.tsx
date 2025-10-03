@@ -1,4 +1,4 @@
-import "../styles/pages/Books.css";
+import "../styles/Books.css";
 
 type Book = {
   title: string;
