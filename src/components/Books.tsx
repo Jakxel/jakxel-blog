@@ -1,12 +1,12 @@
 import "../styles/Books.css";
 
 // Importa las imágenes
-import CleanCodeImg from "src/assets/BooksCovers/BS13550-OREILLY-Clean-Code-Cookbook-836545324.jpeg";
-import SystemsThinkingImg from "src/assets/BooksCovers/400w-4248732087.jpeg";
-import StaffEngineerImg from "src/assets/BooksCovers/the-staff-engineer-s-path-3044587758.jpeg";
-import ArchitectElevatorImg from "src/assets/BooksCovers/the-software-architect-elevator-1598937182.jpeg";
-import LearningGitImg from "src/assets/BooksCovers/Learning-Git-Cover-2034997224.jpeg";
-import BookPlaceholder from "src/assets/book-placeholder.png";
+import CleanCodeImg from "../assets/BooksCovers/BS13550-OREILLY-Clean-Code-Cookbook-836545324.jpeg";
+import SystemsThinkingImg from "../assets/BooksCovers/400w-4248732087.jpeg";
+import StaffEngineerImg from "../assets/BooksCovers/the-staff-engineer-s-path-3044587758.jpeg";
+import ArchitectElevatorImg from "../assets/BooksCovers/the-software-architect-elevator-1598937182.jpeg";
+import LearningGitImg from "../assets/BooksCovers/Learning-Git-Cover-2034997224.jpeg";
+import BookPlaceholder from "../assets/book-placeholder.png";
 
 type Book = {
   title: string;
