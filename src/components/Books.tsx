@@ -6,7 +6,7 @@ import SystemsThinkingImg from "../assets/BooksCovers/400w-4248732087.jpeg";
 import StaffEngineerImg from "../assets/BooksCovers/the-staff-engineer-s-path-3044587758.jpeg";
 import ArchitectElevatorImg from "../assets/BooksCovers/the-software-architect-elevator-1598937182.jpeg";
 import LearningGitImg from "../assets/BooksCovers/Learning-Git-Cover-2034997224.jpeg";
-import BookPlaceholder from "../assets/book-placeholder.png";
+
 
 type Book = {
   title: string;
@@ -61,7 +61,7 @@ function Books() {
       <ul className="books-list">
         {books.map((book, idx) => (
           <li key={idx} className="book-card">
-            <img src={book.image || BookPlaceholder} alt={book.title} className="book-image" />
+            <img src={book.image} alt={book.title} className="book-image" />
             <div className="book-info">
               <h2>{book.title}</h2>
               <p><strong>Description:</strong> {book.description}</p>

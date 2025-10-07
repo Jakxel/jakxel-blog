@@ -112,3 +112,8 @@
         height: 140px;
     }
 }
+@media (max-width: 500px){
+    .books-container{
+        width: 85vw;
+    }
+}

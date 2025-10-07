@@ -3,9 +3,6 @@ header{
     text-align: center;
     transition: 1s ease-in-out;
 }
-header h1{
-    
-}
 
 nav {
     width: 100%;
@@ -31,7 +28,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.;
     border-radius: 4px;
     transition: background 0.2s, color 0.2s;
 }
@@ -54,7 +51,16 @@ nav ul li a.active {
 }
 @media (max-width: 800px) {
     nav{
-        display: none;
         transition: 1s ease-in-out;
+
     }
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
 }

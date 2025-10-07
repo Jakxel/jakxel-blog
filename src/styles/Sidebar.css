@@ -68,3 +68,8 @@ text-decoration: none;
     gap: 0;
   }
 }
+@media (max-width: 500px){
+    aside{
+        display: none;
+    }
+}
