@@ -56,3 +56,18 @@ main{
   font-size: 1rem;
   line-height: 1.6;
 }
+
+
+@media (max-width: 500px){
+    .section{
+        width: 85vw;
+    }
+    .home-main, .recent-post {
+  padding-top: 2rem;
+  margin-right: 0rem;
+  line-height: 1.75;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+}
